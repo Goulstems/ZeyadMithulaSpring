@@ -17,10 +17,10 @@ class Bank:
 
 #[[Account class]] : responsible for independent transactions
 class Account:
-    def __init__(self,name:str,startingBalance:Decimal=0):
+    def __init__(self,name:str,startingBalance:Decimal=0,accountID=0):
         self.name = name
         self.balance = startingBalance
-        self.accountID=Bank.nextID
+        self.accountID=accountID or Bank.nextID
         Bank.addAccount(self)
     def changeBalance(self,amount:Decimal=0):
         self.balance+=amount
