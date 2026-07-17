@@ -8,11 +8,10 @@ dataFile = "appStorage/accounts.json"
 #     
 
 def saveAccountData():
-    data = {"accounts": []}
-    # data = "Hello, world!"
+    data = {"accounts": []}                     #Establish datastructure to save
 
     for account in Bank.storage:                #ITERATE appData
-        data["accounts"].append({                   #build the data structure to save
+        data["accounts"].append({                   #append to the data structure
             "name": account.name,
             "balance": str(account.balance),
             "accountID": account.accountID
