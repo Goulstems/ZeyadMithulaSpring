@@ -21,4 +21,10 @@ def sum1ToN(N):              #with a helper function
 #     print(i)
 #     print1ToN(i+1,N)
 
-print(sum1ToN(5))
+# print(sum1ToN(5))
+
+def omgHax():
+    print("omg my memory!!!!")
+    omgHax()
+
+omgHax()
